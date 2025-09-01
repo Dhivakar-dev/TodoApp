@@ -81,32 +81,25 @@ Run with Maven:
 ./mvnw spring-boot:run
 ```
 
-The server will start at: http://localhost:8080
+The server will start at: **http://localhost:8080**
 
-🗺️ API Endpoints
-🔑 Authentication
+---
 
-POST /auth/register → Register a new user
+## 🗺️ API Endpoints  
 
-POST /auth/login → Authenticate user & receive JWT
+### 🔑 Authentication  
+- `POST /auth/register` → Register a new user  
+- `POST /auth/login` → Authenticate user & receive JWT  
 
-📋 Todos (JWT required)
+### 📋 Todos (JWT required)  
+- `GET /api/todos` → Get all todos for the authenticated user  
+- `GET /api/todos/{id}` → Get a specific todo by ID  
+- `POST /api/todos` → Create a new todo  
+- `PUT /api/todos/{id}` → Update an existing todo  
+- `DELETE /api/todos/{id}` → Delete a todo  
 
-GET /api/todos → Get all todos for the authenticated user
+---
 
-GET /api/todos/{id} → Get a specific todo by ID
-
-POST /api/todos → Create a new todo
-
-PUT /api/todos/{id} → Update an existing todo
-
-DELETE /api/todos/{id} → Delete a todo
-
-🤝 Contributing
-
-Contributions are welcome! 🎉
-If you find bugs or have suggestions, feel free to open an issue or submit a pull request.
-
-
-
-
+## 🤝 Contributing  
+Contributions are welcome! 🎉  
+If you find bugs or have suggestions, feel free to open an issue or submit a pull request. 
